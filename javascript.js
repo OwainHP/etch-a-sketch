@@ -18,7 +18,8 @@ div.addEventListener(
   "mouseover",
   (event) => {
     // highlight the mouseover target
-    event.target.style.backgroundColor = "black";
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    event.target.style.backgroundColor = "#" + randomColor;
   },
   false,
 );
